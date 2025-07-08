@@ -10,8 +10,8 @@ export default defineConfig({
   name: "victoreke",
   title: "victoreke.com",
   basePath: "/studio",
-  projectId,
-  dataset,
+  projectId: "90mor2er",
+  dataset: "production",
   plugins: [deskTool(), visionTool(), codeInput(), table()],
   schema: { types: schemaTypes },
 });
