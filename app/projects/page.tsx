@@ -9,13 +9,13 @@ import { sanityFetch } from "@/lib/sanity.client";
 import PageHeading from "../components/shared/PageHeading";
 
 export const metadata: Metadata = {
-  title: "Project | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/projects"),
-  description: "Explore projects built by Victor Eke",
+  title: "Project | Brayden Cheng",
+  metadataBase: new URL("https://braydencheng.vercel.app/projects"),
+  description: "Explore projects built by Brayden Cheng",
   openGraph: {
-    title: "Projects | Victor Eke",
-    url: "https://victoreke.com/projects",
-    description: "Explore projects built by Victor Eke",
+    title: "Projects | Brayden Cheng",
+    url: "https://braydencheng.vercel.app/projects",
+    description: "Explore projects built by Brayden Cheng",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
   },
@@ -31,7 +31,7 @@ export default async function Project() {
     <main className="max-w-7xl mx-auto md:px-16 px-6">
       <PageHeading
         title="Projects"
-        description="I've worked on tons of little projects over the years but these are the ones that I'm most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas on how it can be improved."
+        description="Some of the projects I have worked on, both personal and open source."
       />
 
       <Slide delay={0.1}>
