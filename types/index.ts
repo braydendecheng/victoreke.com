@@ -1,5 +1,6 @@
 import { TableRow } from "@sanity/table";
 import { PortableTextBlock } from "sanity";
+import { FinalOutcomeType } from '@/types/FinalOutcome';
 
 export interface Table {
   rows?: TableRow[];
@@ -46,20 +47,19 @@ export type JobType = {
   endDate: string;
 };
 
-export type ProjectType = {
-  _id: string;
+export interface ProjectType {
   name: string;
   slug: string;
   tagline: string;
-  projectUrl: string;
-  repository: string;
-  logo: string;
-  coverImage: {
+  projectUrl?: string;
+  repository?: string;
+  coverImage?: {
     image: string;
-    alt: string | null;
-    lqip: string;
+    alt: string;
+    lqip?: string;
   };
-  description: PortableTextBlock[];
+  description: any;
+  finalOutcome?: FinalOutcomeType | null;  // ✅ Add this
 };
 
 export type PostType = {
@@ -97,3 +97,5 @@ export type HeroeType = {
   url: string;
   met: boolean;
 };
+
+

@@ -64,8 +64,16 @@ export const singleProjectQuery = groq`*[_type == "project" && slug.current == $
     alt,
   },
   tagline,
-  description
+  description,
+  finalOutcome {
+    enterpriseClients,
+    employeesTrained,
+    threatRecognition,
+    keyAchievements,
+    cybersecurityInnovation
+  }
 }`;
+
 
 export const postsQuery = groq`*[_type == "Post"] | order(_createdAt desc){
   ${postField},

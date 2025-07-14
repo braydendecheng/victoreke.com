@@ -69,6 +69,41 @@ const project = {
       type: "blockContent",
       description: "Write a full description about this project",
     }),
+
+    // ✅ Insert finalOutcome here
+    defineField({
+      name: "finalOutcome",
+      title: "Final Outcome",
+      type: "object",
+      fields: [
+        defineField({
+          name: "enterpriseClients",
+          title: "Enterprise Clients",
+          type: "number",
+        }),
+        defineField({
+          name: "employeesTrained",
+          title: "Employees Trained",
+          type: "number",
+        }),
+        defineField({
+          name: "threatRecognition",
+          title: "Threat Recognition Improvement (%)",
+          type: "number",
+        }),
+        defineField({
+          name: "keyAchievements",
+          title: "Key Achievements",
+          type: "array",
+          of: [{ type: "string" }],
+        }),
+        defineField({
+          name: "cybersecurityInnovation",
+          title: "Cybersecurity Innovation",
+          type: "text",
+        }),
+      ],
+    }),
   ],
 };
 

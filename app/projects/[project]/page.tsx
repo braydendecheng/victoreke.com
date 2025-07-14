@@ -8,6 +8,8 @@ import { Slide } from "../../animation/Slide";
 import { urlFor } from "@/lib/sanity.image";
 import { sanityFetch } from "@/lib/sanity.client";
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
+import FinalOutcome from '../../components/FinalOutcome';
+import { FinalOutcomeType } from '@/types/FinalOutcome';
 
 type Props = {
   params: {
@@ -108,6 +110,10 @@ export default async function Project({ params }: Props) {
               components={CustomPortableText}
             />
           </div>
+          {/* Final Outcome Section */}
+        <div className="mt-12">
+          <FinalOutcome data={project.finalOutcome || null} />
+        </div>
         </div>
       </Slide>
     </main>
